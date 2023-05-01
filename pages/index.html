@@ -20,6 +20,7 @@
                 <section class="search-bar">
                     <img src = "../assets/icons/search_icon.svg" alt="search icon" class="search-icon"/>
                     <input type="search" placeholder="Global search" name="search" class="search-field"/>
+                    <img src = "../assets/icons/notifications.svg" alt="notifications icon" style="height: 1.5vw; width: 1.5vw; align-self: center; margin-right: 2%;"/>
 
                 </section>
                 <!-- <div class="separator"></div> -->
@@ -29,10 +30,10 @@
                             
                             <section class="tasks-header">
                                 <section class="info">
-                                    <p class="n-tasks-of-x">8 task completed out of 10</p>
+                                    <p style="font-size:1.38vw; color: #334D6E;" class="n-tasks-of-x">8 task completed out of 10</p>
                                     <div class="show">
-                                        <p>Show:</p>
-                                        <p class="cian" style="margin-left: 5px;">This week</p>
+                                        <p style="font-size:1vw;">Show:</p>
+                                        <p class="cian" style="margin-left: 5px; font-size:1vw;">This week</p>
                                         <img src = "../assets/icons/Polygon.svg" alt="search icon" class="polygon"/>
                                     </div>
                                 </section>
@@ -48,13 +49,85 @@
                                 </ul>
                             </section>
                             <section class="card-list">
-                                <section class="card">1</section>
-                                <section class="card">2</section>
-                                <section class="card">3</section>
+                                <section class="card">
+                                    <div class="left">
+                                        <p style="font-size: 1.5vw; color: #323C47">Send benefit review by Sunday</p>
+                                        <div class="due-date">
+                                            <p style="font-size: 1vw; color: #4C5862; opacity: 0.5;">Due Date:</p>
+                                            <p style="font-size: 1vw; color: #4C5862; margin-left: 5px;">December 23, 2018</p>
+                                        </div>
+                                        <div class="creator">
+                                            <img src="../assets/img/avatar1.jpg" alt="Avatar" class="avatar"> 
+                                            <p style="font-size: 1vw; color:#707683; margin-left: 5px;">George Fields</p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <p style="font-size: 1vw; color: #90A0B7; margin-top: 3%; text-align: end;">Reminder</p>
+                                        <p class="status" style="background-color: #2ED47A;">Completed</p>
+                                    </div>
+                                </section>
+                                <section class="card">
+                                    <div class="left">
+                                        <p style="font-size: 1.5vw; color: #323C47">Invite to office meet-up</p>
+                                        <div class="due-date">
+                                            <p style="font-size: 1vw; color: #4C5862; opacity: 0.5;">Due Date:</p>
+                                            <p style="font-size: 1vw; color: #4C5862; margin-left: 5px;">December 23, 2018</p>
+                                        </div>
+                                        <div class="creator">
+                                            <img src="../assets/img/avatar1.jpg" alt="Avatar" class="avatar"> 
+                                            <p style="font-size: 1vw; color:#707683; margin-left: 5px;">Rebecca Moore</p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <p style="font-size: 1vw; color: #90A0B7; margin-top: 3%; text-align: end;">Call</p>
+                                        <p class="status" style="background-color: #F7685B;">Ended</p>
+                                    </div>
+                                </section>
+                                <section class="card">
+                                    <div class="left">
+                                        <p style="font-size: 1.5vw; color: #323C47">Office meet-up</p>
+                                        <div class="due-date">
+                                            <p style="font-size: 1vw; color: #4C5862; opacity: 0.5;">Due Date:</p>
+                                            <p style="font-size: 1vw; color: #4C5862; margin-left: 5px;">December 23, 2018</p>
+                                        </div>
+                                        <div class="creator">
+                                            <img src="../assets/img/avatar1.jpg" alt="Avatar" class="avatar"> 
+                                            <p style="font-size: 1vw; color:#707683; margin-left: 5px;">Lindsey Stroud</p>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <p style="font-size: 1vw; color: #90A0B7; margin-top: 3%; text-align: end;">Event</p>
+                                        <p class="status" style="background-color: #2ED47A;">Completed</p>
+                                    </div>
+                                </section>
+                                <section class="show-more cian" style="font-size: 1vw;">Show More</section>
                             </section>
                         </section>
-                        <section class="deals"></section>
-                        <section class="progress"></section>
+                        <section class="deals">
+                            <section class="graphs-header">
+                                <p style="font-size:1vw; color: #334D6E;" class="n-tasks-of-x">Deals</p>
+                                <div class="show">
+                                    <p style="font-size:0.8vw;">Show:</p>
+                                    <p class="cian" style="margin-left: 5px; font-size:0.8vw;">Monthly</p>
+                                    <img src = "../assets/icons/Polygon.svg" alt="search icon" class="polygon"/>
+                                </div>
+                            </section>
+                            <section class="graph">
+                                <div>1</div>
+                                <img src="../assets/graphs/deals_graphic.png" alt="graph with deals" style="border: 1px solid red; object-fit: cover; margin: 1%; max-width: 85%; max-height: 85%; align-self: center;">
+                            </section>
+                        </section>
+                        <section class="progress">
+                            <section class="graphs-header">
+                                <p style="font-size:1vw; color: #334D6E;" class="n-tasks-of-x">Tasks</p>
+                                <div class="show">
+                                    <p style="font-size:0.8vw;">Show:</p>
+                                    <p class="cian" style="margin-left: 5px; font-size:0.8vw;">This month</p>
+                                    <img src = "../assets/icons/Polygon.svg" alt="search icon" class="polygon"/>
+                                </div>
+                            </section>
+                            
+                        </section>
                     </section>
                 </div>
             </section>
@@ -63,4 +136,4 @@
 
         
     </body>
-</html>calc(50% - 24px/2 - 277.5px);
+</html>
