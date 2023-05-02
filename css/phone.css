@@ -1,0 +1,144 @@
+@media (max-width: 375px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .week-calendar {
+        display: none;
+    }
+
+    .dashboard {
+        flex-basis: 100%;
+    }
+
+
+    .search-icon {
+        width: 3vw;
+        height: 3vw;
+    }
+    
+    
+    .search-field {
+        font-size: 3vw;
+    }
+
+    .notification-icon {
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        background-color: #FFFFFF;
+    
+    }
+    .card-list {
+        margin-top: 3%;
+    }
+    .show-more {
+        display: none;
+    }
+    
+    .tasks-progress {
+        font-size: 4vw;
+    }
+
+    .show-semicolon {
+        font-size: 3vw;
+        color: #6A707E;
+    }
+
+    .this-week {
+        font-size: 3vw;
+    }
+
+    .task-description {
+        font-size: 4vw;
+    }
+
+    .due {
+        font-size: 3vw;
+    }
+    .due-month {
+        font-size: 3vw;
+    }
+
+    .creator-name {
+        font-size: 3vw;
+    }
+
+    .avatar {
+        width: 4vw;
+        height: 4vw;
+        border-radius: 50px;
+    }
+
+    .task-type {
+        font-size: 2vw;
+    }
+
+    .status {
+        font-size: 2vw;
+    }
+
+    .header-g {
+        color: #FFFFFF;
+    }
+    .show {
+        align-self: flex-end;
+    }
+
+    .closed-deals-icon {
+        width: 2vw;
+        height: 2vw;
+    }
+    
+    .closed-deals-text {
+        font-size: 3vw;
+    }
+    
+    .info {
+        margin-top: 4%;
+    }
+
+    .indicator-container {
+        margin-top: 4%;
+    }
+    .date {
+        font-size: 3vw;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    
+    .cian {
+        color: #109CF1
+    }
+    
+
+    .task-description {
+        font-size: 3vw;
+    }
+    
+    .due-date {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2%;
+        align-items: center;
+    }
+    
+    
+    .right {
+        flex-basis: 25%;
+    }
+    
+    .legend-bullet {
+        font-size: 2vw;
+    }
+    
+    .legend-icon {
+        width: 2vw;
+        height: 2vw;
+    }
+}

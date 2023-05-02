@@ -112,9 +112,8 @@ html {
     margin-left: 2%;
 }
 
-
 .search-field {
-    width: 99%;
+    width: 98%;
     height: 100%;
     border: none;
     font-style: normal;
@@ -125,6 +124,13 @@ html {
     color: #90A0B7;
     align-self: center;
     margin-left: 1%;
+}
+
+.notification-icon {
+    height: 1.5vw; 
+    width: 1.5vw; 
+    align-self: center; 
+    margin-right: 1%;
 }
 
 .grid-wrapper {
@@ -142,7 +148,6 @@ html {
     width: 95%;
     margin-top: 2%;
     margin-bottom: 2%;
-    background-color: #F5F6F8;
     column-gap: 2%;
     row-gap: 4%;
 }
@@ -175,11 +180,26 @@ html {
  
 }
 
+.tasks-progress {
+    font-size:1.38vw; 
+    color: #334D6E;
+}
+
 .show {
     display: flex;
     justify-content: flex-end;
     flex-basis: 40%;
     align-items: center;
+}
+
+.show-semicolon {
+    font-size: 1vw;
+    color: #6A707E;
+}
+
+.this-week {
+    margin-left: 2%; 
+    font-size:1vw;
 }
 
 .indicator-container {
@@ -273,13 +293,18 @@ html {
 
 .card {
     background-color: #FFFFFF;
-    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.14);
     border-radius: 4px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 3%;
+}
+
+.task-description {
+    font-size: 1.5vw; 
+    color: #323C47"
 }
 
 .left {
@@ -293,6 +318,18 @@ html {
     flex-direction: row;
     margin-top: 2%;
     align-items: center;
+}
+
+.due {
+    font-size: 1vw; 
+    color: #4C5862; 
+    opacity: 0.5;
+}
+
+.due-month {
+    font-size: 1vw; 
+    color: #4C5862; 
+    margin-left: 5px;
 }
 
 .creator {
@@ -309,12 +346,25 @@ html {
     border-radius: 50px;
 }
 
+.creator-name {
+    font-size: 1vw; 
+    color:#707683; 
+    margin-left: 5px;
+}
+
 .right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 2%;
-    flex-basis: 15%;
+    flex-basis: 30%;
+}
+
+.task-type {
+    font-size: 1vw; 
+    color: #90A0B7; 
+    margin-top: 3%; 
+    text-align: end;
 }
 
 
@@ -324,7 +374,13 @@ html {
     font-size: 1vw;
     text-align: center;
     margin-bottom: 3%;
-    width: 100%;
+    width: 60%;
+    align-self: flex-end;
+}
+
+.ended {
+    display: flex;
+    justify-content: space-between;
 }
 
 .show-more {
@@ -332,6 +388,7 @@ html {
     justify-content: center;
     align-items: center;
     margin-bottom: 2%;
+    font-size: 1vw;
 }
 
 
@@ -343,13 +400,28 @@ html {
     flex-direction: column;
 }
 
+.header-g {
+    font-size:1vw; color: #334D6E;
+}
+
 .closed-deals {
     display: flex;
     flex-direction: row;
     margin-left: 3%;
     margin-right: 3%;  
     margin-top: 2%;
-    border: 1px solid red; 
+}
+
+.closed-deals-icon {
+    height: 0.8vw; 
+    width: 0.8vw; 
+    align-self: center; 
+    margin-left: 1%;
+}
+
+.closed-deals-text {
+    font-size: 0.8vw; 
+    margin-left: 2%;
 }
 
 .graphs-header {
@@ -364,7 +436,6 @@ html {
 }
 
 .graph {
-    border: 1px solid red; 
     margin-top: 5%;
     width: 94%; 
     height: 65%; 
@@ -392,7 +463,6 @@ html {
 
 .g {
     flex-basis: 70%;
-    border: 1px solid green;
     height: 90%; 
     align-self: center;
 }
@@ -402,33 +472,20 @@ html {
     display: flex;
     flex-direction: column;
     align-self: center;
-    border: 1px solid red;
+    margin-left: 7%;
 }
 
-@media (max-width: 375px) {
-    .nav-bar {
-        display: none;
-    }
-
-
-
-
-    .week-calendar {
-        display: none;
-    }
-
-    .dashboard {
-        flex-basis: 100%;
-    }
-
-    .grid-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-        
-
+.legend-bullet {
+    font-size: 1vw;
+    margin-left: 7%;
 }
+
+.legend-icon {
+    width: 0.8vw;
+    height: 0.8vw;
+    align-self: center;
+}
+
 
 
 

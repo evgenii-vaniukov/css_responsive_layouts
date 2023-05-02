@@ -7,6 +7,7 @@
         <title>Responsive Layouts</title>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link href="../css/styles.css" rel="stylesheet">
+        <link href="../css/phone.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
     </head>
@@ -62,19 +63,17 @@
                 <section class="search-bar">
                     <img src = "../assets/icons/search_icon.svg" alt="search icon" class="search-icon"/>
                     <input type="search" placeholder="Global search" name="search" class="search-field"/>
-                    <img src = "../assets/icons/notifications.svg" alt="notifications icon" style="height: 1.5vw; width: 1.5vw; align-self: center; margin-right: 2%;"/>
-
+                    <img src = "../assets/icons/notifications.svg" alt="notifications icon" class="notification-icon"/>
                 </section>
-                <!-- <div class="separator"></div> -->
                 <div class="grid-wrapper">
                     <section class="grid-container">
                         <section class="tasks">
                             <section class="tasks-header">
                                 <section class="info">
-                                    <p style="font-size:1.38vw; color: #334D6E;">8 task completed out of 10</p>
+                                    <p class="tasks-progress">8 task completed out of 10</p>
                                     <div class="show">
-                                        <p style="font-size:1vw;">Show:</p>
-                                        <p class="cian" style="margin-left: 2%; font-size:1vw;">This week</p>
+                                        <p class="show-semicolon">Show:</p>
+                                        <p class="cian this-week">This week</p>
                                         <img src = "../assets/icons/Polygon.svg" alt="search icon" class="polygon"/>
                                     </div>
                                 </section>
@@ -97,102 +96,102 @@
                             <section class="card-list">
                                 <section class="card">
                                     <div class="left">
-                                        <p style="font-size: 1.5vw; color: #323C47">Send benefit review by Sunday</p>
+                                        <p class="task-description">Send benefit review by Sunday</p>
                                         <div class="due-date">
-                                            <p style="font-size: 1vw; color: #4C5862; opacity: 0.5;">Due Date:</p>
-                                            <p style="font-size: 1vw; color: #4C5862; margin-left: 5px;">December 23, 2018</p>
+                                            <p class="due">Due Date:</p>
+                                            <p class="due-month">December 23, 2018</p>
                                         </div>
                                         <div class="creator">
                                             <img src="../assets/img/avatar1.jpg" alt="Avatar" class="avatar"> 
-                                            <p style="font-size: 1vw; color:#707683; margin-left: 5px;">George Fields</p>
+                                            <p class="creator-name">George Fields</p>
                                         </div>
                                     </div>
                                     <div class="right">
-                                        <p style="font-size: 1vw; color: #90A0B7; margin-top: 3%; text-align: end;">Reminder</p>
+                                        <p class="task-type">Reminder</p>
                                         <p class="status" style="background-color: #2ED47A;">Completed</p>
                                     </div>
                                 </section>
                                 <section class="card">
                                     <div class="left">
-                                        <p style="font-size: 1.5vw; color: #323C47">Invite to office meet-up</p>
+                                        <p class="task-description">Invite to office meet-up</p>
                                         <div class="due-date">
-                                            <p style="font-size: 1vw; color: #4C5862; opacity: 0.5;">Due Date:</p>
-                                            <p style="font-size: 1vw; color: #4C5862; margin-left: 5px;">December 23, 2018</p>
+                                            <p class="due">Due Date:</p>
+                                            <p class="due-month">December 23, 2018</p>
                                         </div>
                                         <div class="creator">
                                             <img src="../assets/img/avatar1.jpg" alt="Avatar" class="avatar"> 
-                                            <p style="font-size: 1vw; color:#707683; margin-left: 5px;">Rebecca Moore</p>
+                                            <p class="creator-name">Rebecca Moore</p>
                                         </div>
                                     </div>
                                     <div class="right">
-                                        <p style="font-size: 1vw; color: #90A0B7; margin-top: 3%; text-align: end;">Call</p>
-                                        <p class="status" style="background-color: #F7685B;">Ended</p>
+                                        <p class="task-type">Call</p>
+                                        <div class="ended">
+                                            <img src = "../assets/icons/edit.svg" alt="edit icon" class="notification-icon"/>
+                                            <img src = "../assets/icons/delete.svg" alt="delete icon" class="notification-icon"/>
+                                            <p class="status" style="background-color: #F7685B;">Ended</p>
+                                        </div>
                                     </div>
                                 </section>
                                 <section class="card">
                                     <div class="left">
-                                        <p style="font-size: 1.5vw; color: #323C47">Office meet-up</p>
+                                        <p class="task-description">Office meet-up</p>
                                         <div class="due-date">
-                                            <p style="font-size: 1vw; color: #4C5862; opacity: 0.5;">Due Date:</p>
-                                            <p style="font-size: 1vw; color: #4C5862; margin-left: 5px;">December 23, 2018</p>
+                                            <p class="due">Due Date:</p>
+                                            <p class="due-month">December 23, 2018</p>
                                         </div>
                                         <div class="creator">
                                             <img src="../assets/img/avatar1.jpg" alt="Avatar" class="avatar"> 
-                                            <p style="font-size: 1vw; color:#707683; margin-left: 5px;">Lindsey Stroud</p>
+                                            <p class="creator-name">Lindsey Stroud</p>
                                         </div>
                                     </div>
                                     <div class="right">
-                                        <p style="font-size: 1vw; color: #90A0B7; margin-top: 3%; text-align: end;">Event</p>
+                                        <p class="task-type">Event</p>
                                         <p class="status" style="background-color: #2ED47A;">Completed</p>
                                     </div>
                                 </section>
-                                <section class="show-more cian" style="font-size: 1vw;">Show More</section>
+                                <section class="show-more cian">Show More</section>
                             </section>
                         </section>
                         <section class="deals">
                             <section class="graphs-header">
-                                <p style="font-size:1vw; color: #334D6E;">Deals</p>
+                                <p class="header-g">Deals</p>
                                 <div class="show">
-                                    <p style="font-size:1vw;">Show:</p>
-                                    <p class="cian" style="margin-left: 2%; font-size:1vw;">Monthly</p>
+                                    <p class="show-semicolon">Show:</p>
+                                    <p class="this-week cian">Monthly</p>
                                     <img src = "../assets/icons/Polygon.svg" alt="search icon" class="polygon"/>
                                 </div>
                             </section>
                             <div class="closed-deals">
-                                <img src = "../assets/icons/closed_deals.svg" alt="icon" style="height: 0.8vw; width: 0.8vw; align-self: center; margin-left: 1%;"/>
-                                <p style="font-size: 0.8vw; margin-left: 2%;">Closed deals</p>
-                            </div>
-                            
-                            <img src="../assets/graphs/deals_graphic.png" alt="graph with deals" class="graph">
-                           
+                                <img src = "../assets/icons/closed_deals.svg" alt="icon" class="closed-deals-icon"/>
+                                <p class="closed-deals-text">Closed deals</p>
+                            </div>                         
+                            <img src="../assets/graphs/deals_graphic.png" alt="graph with deals" class="graph">                          
                         </section>
                         <section class="progress">
                             <section class="graphs-header">
-                                <p style="font-size:1vw; color: #334D6E;">Tasks</p>
+                                <p class="header-g">Tasks</p>
                                 <div class="show">
-                                    <p style="font-size:1vw;">Show:</p>
-                                    <p class="cian" style="margin-left: 2%; font-size:1vw;">This month</p>
+                                    <p class="show-semicolon">Show:</p>
+                                    <p class="this-week cian">This month</p>
                                     <img src = "../assets/icons/Polygon.svg" alt="search icon" class="polygon"/>
                                 </div>
                             </section>
                             <section class="progress-graph">                            
                                 <img src="../assets/graphs/progress_graphic.png" alt="graph with deals" class="g">
-                                <!-- <div class="g">1</div> -->
-                                <ul class="legend" style="margin-left: 2%;">
-                                    <li class="page" style="font-size: 1vw;">
-                                        <img src = "../assets/icons/active.svg" alt="dashboard icon" style="width: 0.8vw; height: 0.8vw; align-self: center;"/>
-                                        <p class="cian" style="margin-left: 5%;">Active</p>
+                                <ul class="legend">
+                                    <li class="page">
+                                        <img src = "../assets/icons/active.svg" alt="dashboard icon" class="legend-icon"/>
+                                        <p class="cian legend-bullet">Active</p>
                                     </li>
-                                    <li class="page" style="font-size: 1vw;">
-                                        <img src = "../assets/icons/completed.svg" alt="tasks icon" style="width: 0.8vw; height: 0.8vw; align-self: center;"/>
-                                        <p style="margin-left: 5%;">Comleted</p>
+                                    <li class="page">
+                                        <img src = "../assets/icons/completed.svg" alt="tasks icon" class="legend-icon"/>
+                                        <p class="legend-bullet">Comleted</p>
                                     </li>
-                                    <li class="page" style="font-size: 1vw;">
-                                        <img src = "../assets/icons/ended.svg" alt="email icon" style="width: 0.8vw; height: 0.8vw; align-self: center;"/>
-                                        <p style="margin-left: 5%;">Ended</p>
+                                    <li class="page">
+                                        <img src = "../assets/icons/ended.svg" alt="email icon" class="legend-icon"/>
+                                        <p class="legend-bullet">Ended</p>
                                     </li>
                                 </ul>
-                                
                             </section>
                         </section>
                     </section>
