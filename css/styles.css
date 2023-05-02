@@ -23,7 +23,8 @@ html {
     flex-basis: 18%;
     border-right:1px solid #EBEFF2;
     box-shadow: 6px 0px 18px 0px rgba(0, 0, 0, 0.06);
-
+    display: flex;
+    flex-direction: column;
 }
 
 .name {
@@ -39,6 +40,58 @@ html {
     margin-left: 10%;
 }
 
+.personal-info {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+}
+
+.main-avatar {
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50px;
+    margin-top: 10%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.pages {
+    border-bottom: 1px solid #EBEFF2;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+.page {
+    display: flex;
+    flex-direction: row;
+    color: #334D6E;
+    font-size: 1.2vw;
+    margin-bottom: 7%;
+}
+
+.settings {
+    display: flex;
+    flex-direction: row;
+    color: #334D6E;
+    font-size: 1.2vw;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.toggle {
+    display: flex;
+    flex-direction: row;
+    color: #90A0B7;
+    font-size: 1vw;
+    margin-top: auto;
+    margin-left: 10%;
+    margin-bottom: 7%;
+}
+
 .dashboard {
     flex-basis: 82%;
     height: 100vh;
@@ -50,13 +103,13 @@ html {
     background-color: #FFFFFF;
     border-bottom: 1px solid #EBEFF2;
     display: flex;
-    margin-left: 2%;
 }
 
 .search-icon {
     width: 1.2vw;
     height: 1.2vw;
     align-self: center;
+    margin-left: 2%;
 }
 
 
@@ -99,6 +152,8 @@ html {
     grid-row: span 2;
     box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
     border-radius: 4px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -107,6 +162,7 @@ html {
     flex-direction: column;
     border-bottom: 1px solid #EBEFF2;
     justify-content: flex-start;
+    flex-basis: 10%;
 }
 
 .info {
@@ -122,27 +178,23 @@ html {
 .show {
     display: flex;
     justify-content: flex-end;
-    flex-basis: 30%;
+    flex-basis: 40%;
     align-items: center;
 }
 
-
-.graphs-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 3%;
-    margin-right: 3%;  
+.indicator-container {
+    width: 94%;
     margin-top: 2%;
-    border-bottom: 1px solid #EBEFF2;
-    padding: 1% 1% 3% 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.indicator {
+    width: 80%;
+    height: 4px;
+    color: #2ED47A;
+    border-radius: 4px;
 }
 
-.graph {
-    display: flex;
-    flex-direction: column;
-    
-}
 
 .polygon {
     height: 20%;
@@ -194,7 +246,6 @@ html {
     color: #4C5862;
     padding-left: 3px;
     padding-right: 3px;
-
 }
 
 .cian {
@@ -206,22 +257,18 @@ html {
     color: #FFFFFF;
     text-align: center;
     border: 1px solid #109CF1;
-
 }
-
 
 .card-list{
     display: flex;
     flex-direction: column;
     width: 94%;
-    justify-content: space-around;
     margin-top: 2%; 
     margin-right: auto;
-    margin-left: auto;
-    border: 1px solid purple;
-
-    
-    
+    margin-left: auto; 
+    overflow: hidden;  
+    flex-basis: 90%;
+    overflow-y: auto;
 }
 
 .card {
@@ -267,7 +314,7 @@ html {
     flex-direction: column;
     justify-content: space-between;
     margin: 2%;
-    flex-basis: 18%;
+    flex-basis: 15%;
 }
 
 
@@ -284,6 +331,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2%;
 }
 
 
@@ -291,17 +339,79 @@ html {
     background-color: #FFFFFF;
     box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
     border-radius: 4px;
+    display: flex;
+    flex-direction: column;
 }
+
+.closed-deals {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3%;
+    margin-right: 3%;  
+    margin-top: 2%;
+    border: 1px solid red; 
+}
+
+.graphs-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-right: 3%;  
+    margin-top: 2%;
+    border-bottom: 1px solid #EBEFF2;
+    padding: 1% 1% 3% 1%;
+}
+
+.graph {
+    border: 1px solid red; 
+    margin-top: 5%;
+    width: 94%; 
+    height: 65%; 
+    align-self: center;
+}
+
+
 .progress {
     background-color: #FFFFFF;
     box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
     border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.progress-graph {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3%;
+    margin-right: 3%;  
+    margin-top: 5%;
+    height: 77%;
+    width: 94%;
+}
+
+.g {
+    flex-basis: 70%;
+    border: 1px solid green;
+    height: 90%; 
+    align-self: center;
+}
+
+.legend {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border: 1px solid red;
 }
 
 @media (max-width: 375px) {
     .nav-bar {
         display: none;
     }
+
+
+
 
     .week-calendar {
         display: none;

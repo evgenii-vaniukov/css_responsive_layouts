@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Responsive Layouts</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link href="../css/styles.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
@@ -14,6 +15,47 @@
             <nav class="nav-bar">
                 <section class="name">
                     <p class="caption cian">SaaS Kit</p>
+                </section>
+                <section class="personal-info">
+                    <img src="../assets/img/avatar1.jpg" alt="Avatar" class="main-avatar">
+                    <section class="contact">
+                        <p style="font-size: 1.1vw; color: #192A3E;">Sierra Ferguson</p>
+                        <p style="font-size: 1vw; color: #90A0B7;">s.ferguson@gmail.com</p>
+                    </section>
+                </section>
+                <ul class="pages">
+                    <li class="page">
+                        <img src = "../assets/icons/dashboard-active.svg" alt="dashboard icon" style="width: 1.4vw; height: 1.4vw; align-self: center;"/>
+                        <p class="cian" style="margin-left: 5%;">Dashboard</p>
+                    </li>
+                    <li class="page">
+                        <img src = "../assets/icons/tasks.svg" alt="tasks icon" style="width: 1.4vw; height: 1.4vw; align-self: center;"/>
+                        <p style="margin-left: 5%;">Tasks</p>
+                    </li>
+                    <li class="page">
+                        <img src = "../assets/icons/tasks.svg" alt="email icon" style="width: 1.4vw; height: 1.4vw; align-self: center;"/>
+                        <p style="margin-left: 5%;">Email</p>
+                    </li>
+                    <li class="page">
+                        <img src = "../assets/icons/contacts.svg" alt="contacts icon" style="width: 1.4vw; height: 1.4vw; align-self: center;"/>
+                        <p style="margin-left: 5%;">Contacts</p>
+                    </li>
+                    <li class="page">
+                        <img src = "../assets/icons/chat.svg" alt="chat icon" style="width: 1.4vw; height: 1.4vw; align-self: center;"/>
+                        <p style="margin-left: 5%;">Chat</p>
+                    </li>
+                    <li class="page">
+                        <img src = "../assets/icons/deals.svg" alt="deals icon" style="width: 1.4vw; height: 1.4vw; align-self: center;"/>
+                        <p style="margin-left: 5%;">Deals</p>
+                    </li>
+                </ul>
+                <section class="settings">  
+                    <img src = "../assets/icons/settings.svg" alt="settings icon" style="width: 1.4vw; height: 1.4vw; align-self: center;"/> 
+                    <p style="margin-left: 5%;">Settings</p>
+                </section>
+                <section class="toggle">
+                    <img src = "../assets/icons/toggle.svg" alt="toggle icon" style="width: 1.4vw; height: 1.4vw; align-self: center;"/>
+                    <p style="margin-left: 5%;">Toggle sidebar</p>
                 </section>
             </nav>
             <section class="dashboard">
@@ -27,16 +69,20 @@
                 <div class="grid-wrapper">
                     <section class="grid-container">
                         <section class="tasks">
-                            
                             <section class="tasks-header">
                                 <section class="info">
-                                    <p style="font-size:1.38vw; color: #334D6E;" class="n-tasks-of-x">8 task completed out of 10</p>
+                                    <p style="font-size:1.38vw; color: #334D6E;">8 task completed out of 10</p>
                                     <div class="show">
                                         <p style="font-size:1vw;">Show:</p>
-                                        <p class="cian" style="margin-left: 5px; font-size:1vw;">This week</p>
+                                        <p class="cian" style="margin-left: 2%; font-size:1vw;">This week</p>
                                         <img src = "../assets/icons/Polygon.svg" alt="search icon" class="polygon"/>
                                     </div>
                                 </section>
+                                <div class="indicator-container">
+                                    <div class="w3-light-grey w3-tiny">
+                                        <div class="w3-container w3-green indicator"></div>
+                                    </div>
+                                </div>
                                 <p class="date">23 December, Sunday</p>
                                 <ul class="week-calendar">
                                     <li class="day-cell"><p class="day">Sun</p><p class="n selected-day">23</p></li>
@@ -105,35 +151,53 @@
                         </section>
                         <section class="deals">
                             <section class="graphs-header">
-                                <p style="font-size:1vw; color: #334D6E;" class="n-tasks-of-x">Deals</p>
+                                <p style="font-size:1vw; color: #334D6E;">Deals</p>
                                 <div class="show">
-                                    <p style="font-size:0.8vw;">Show:</p>
-                                    <p class="cian" style="margin-left: 5px; font-size:0.8vw;">Monthly</p>
+                                    <p style="font-size:1vw;">Show:</p>
+                                    <p class="cian" style="margin-left: 2%; font-size:1vw;">Monthly</p>
                                     <img src = "../assets/icons/Polygon.svg" alt="search icon" class="polygon"/>
                                 </div>
                             </section>
-                            <section class="graph">
-                                <div>1</div>
-                                <img src="../assets/graphs/deals_graphic.png" alt="graph with deals" style="border: 1px solid red; object-fit: cover; margin: 1%; max-width: 85%; max-height: 85%; align-self: center;">
-                            </section>
+                            <div class="closed-deals">
+                                <img src = "../assets/icons/closed_deals.svg" alt="icon" style="height: 0.8vw; width: 0.8vw; align-self: center; margin-left: 1%;"/>
+                                <p style="font-size: 0.8vw; margin-left: 2%;">Closed deals</p>
+                            </div>
+                            
+                            <img src="../assets/graphs/deals_graphic.png" alt="graph with deals" class="graph">
+                           
                         </section>
                         <section class="progress">
                             <section class="graphs-header">
-                                <p style="font-size:1vw; color: #334D6E;" class="n-tasks-of-x">Tasks</p>
+                                <p style="font-size:1vw; color: #334D6E;">Tasks</p>
                                 <div class="show">
-                                    <p style="font-size:0.8vw;">Show:</p>
-                                    <p class="cian" style="margin-left: 5px; font-size:0.8vw;">This month</p>
+                                    <p style="font-size:1vw;">Show:</p>
+                                    <p class="cian" style="margin-left: 2%; font-size:1vw;">This month</p>
                                     <img src = "../assets/icons/Polygon.svg" alt="search icon" class="polygon"/>
                                 </div>
                             </section>
-                            
+                            <section class="progress-graph">                            
+                                <img src="../assets/graphs/progress_graphic.png" alt="graph with deals" class="g">
+                                <!-- <div class="g">1</div> -->
+                                <ul class="legend" style="margin-left: 2%;">
+                                    <li class="page" style="font-size: 1vw;">
+                                        <img src = "../assets/icons/active.svg" alt="dashboard icon" style="width: 0.8vw; height: 0.8vw; align-self: center;"/>
+                                        <p class="cian" style="margin-left: 5%;">Active</p>
+                                    </li>
+                                    <li class="page" style="font-size: 1vw;">
+                                        <img src = "../assets/icons/completed.svg" alt="tasks icon" style="width: 0.8vw; height: 0.8vw; align-self: center;"/>
+                                        <p style="margin-left: 5%;">Comleted</p>
+                                    </li>
+                                    <li class="page" style="font-size: 1vw;">
+                                        <img src = "../assets/icons/ended.svg" alt="email icon" style="width: 0.8vw; height: 0.8vw; align-self: center;"/>
+                                        <p style="margin-left: 5%;">Ended</p>
+                                    </li>
+                                </ul>
+                                
+                            </section>
                         </section>
                     </section>
                 </div>
             </section>
         </div>
-        
-
-        
     </body>
 </html>
